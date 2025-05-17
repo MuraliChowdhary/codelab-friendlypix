@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"codelab-friendlychat-web-1f303","appId":"1:125086314336:web:434c7b30741e272ca07805","storageBucket":"codelab-friendlychat-web-1f303.firebasestorage.app","apiKey":"AIzaSyAxPDAghKEJwCmaZa9Se1yZUjX410LZ28g","authDomain":"codelab-friendlychat-web-1f303.firebaseapp.com","messagingSenderId":"125086314336","measurementId":"G-N1DDK63CYL"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
